@@ -1,1 +1,2 @@
 <%= link_to 'Login', Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => 'http://electric-flower-607.heroku.com/redirect') %><br />
+<%= @code %>
