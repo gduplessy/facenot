@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
   
   def redirect
+    oauth_redirect_url = "http://electric-flower-607.heroku.com/redirect"
     @graph2 = Koala::Facebook::GraphAPI.new('194345430580007|ad910226438f313f411b99fe-549563502|yNzMstNxGGnYNAHhyoSRBvCiBGs')
 
     @friends = graph.get_connections("me", "friends")
