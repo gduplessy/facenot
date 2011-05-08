@@ -2,6 +2,8 @@ Facenot::Application.routes.draw do
   resources :pages
 
   root :to => "pages#index"
+
+  match '/redirect' => "pages#redirect"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
