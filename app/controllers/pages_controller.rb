@@ -5,7 +5,10 @@ class PagesController < ApplicationController
     @profile = graph.get_object("me")
     @test = graph.get_object("503174896")
     @friends = graph.get_connections("me", "friends")
-    @gen
+
+    @friends.each do |friend|
+      @tust = graph.get_object("#{friend['id']}")
+    end
   end
   
   def redirect
