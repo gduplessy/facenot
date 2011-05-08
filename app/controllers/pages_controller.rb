@@ -8,7 +8,7 @@ class PagesController < ApplicationController
     oauth_redirect_url = "http://electric-flower-607.heroku.com/redirect"
     @graph2 = Koala::Facebook::GraphAPI.new('194345430580007|ad910226438f313f411b99fe-549563502|yNzMstNxGGnYNAHhyoSRBvCiBGs')
 
-    @friends = graph.get_connections("me", "friends")
+    @friends = @graph2.get_connections("me", "friends")
 
     session[:access_token] = Koala::Facebook::OAuth.new(oauth_redirect_url).get_access_token(params[:code]) if params[:code]
     
