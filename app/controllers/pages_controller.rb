@@ -1,7 +1,12 @@
 class PagesController < ApplicationController
 
   def index
-    graph = Koala::Facebook::GraphAPI.new('194345430580007|ad910226438f313f411b99fe-549563502|yNzMstNxGGnYNAHhyoSRBvCiBGs')      
+    @graph = Koala::Facebook::GraphAPI.new('194345430580007|ad910226438f313f411b99fe-549563502|yNzMstNxGGnYNAHhyoSRBvCiBGs')      
+
+    @friends = Picture.all
+    @friends.each do |id|
+      @friend = id.uid
+    end
   end
   
   def redirect
@@ -14,7 +19,7 @@ class PagesController < ApplicationController
     
     #redirect_to session[:access_token] ? success_path : failure_path
 
-    redirect_to '/'
+    #redirect_to '/'
   end
   
 end
