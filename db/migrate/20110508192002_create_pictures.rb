@@ -4,6 +4,7 @@ class CreatePictures < ActiveRecord::Migration
       t.string :uid
       t.string :name
       t.string :gender
+      t.string :token
 
       t.timestamps
     end
