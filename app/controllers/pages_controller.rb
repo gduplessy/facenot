@@ -14,12 +14,11 @@ class PagesController < ApplicationController
 
 
     #@graph2 = Koala::Facebook::GraphAPI.new('2227470867|2.KwWPjfyit2ge4TUwi7nzeA__.3600.1305003600.0-100001377458845|o2KsSN4dZRjvkTp4fGSn1aoC_0A')
-    oauth_code = @oauth.get_access_token(params['code'])
+    oauth_code = Koala::Facebook::OAuth.new(oauth_redirect_url).get_access_token(params[:code]) if params[:code]
     @graph2 = Koala::Facebook::GraphAPI.new(oauth_code)
 
     @friends = @graph2.get_connections("me", "friends")
 
-    session[:access_token] = Koala::Facebook::OAuth.new(oauth_redirect_url).get_access_token(params[:code]) if params[:code]
     
     #redirect_to session[:access_token] ? success_path : failure_path
 
