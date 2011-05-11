@@ -19,7 +19,7 @@ class PagesController < ApplicationController
     
     #redirect_to session[:access_token] ? success_path : failure_path
 
-    redirect_to '/'
+    #redirect_to '/'
   end
   
 end
