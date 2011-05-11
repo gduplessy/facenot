@@ -7,6 +7,8 @@ class PagesController < ApplicationController
     @friends.each do |id|
       @friend = id.uid
     end
+
+    @friendsrandom = Picture.random
   end
   
   def redirect
