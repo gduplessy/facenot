@@ -1,0 +1,6 @@
+<% @friends.each do |friend| %>
+  <% @tust = friend['id']%>
+  <% @dis = @graph2.get_object(@tust) %>
+  <%= Picture.create!(:uid => @tust, :name => friend['name'], :gender => @dis['gender']) %>
+  <!--<%= "boom* UID: #{@tust}; Name: #{friend['name']}; Gender: #{@dis['gender']}" %><br />-->
+<% end %>
