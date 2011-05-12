@@ -48,6 +48,7 @@ GEM
       rails (~> 3.0)
       thor (~> 0.14)
     json (1.5.1)
+    json_pure (1.4.6)
     koala (1.0.0)
       json (~> 1.0)
       multipart-post (~> 1.0)
@@ -84,7 +85,18 @@ GEM
       rake (>= 0.8.7)
       thor (~> 0.14.6)
     rake (0.8.7)
+    redis (2.2.0)
+    redis-namespace (0.8.0)
+      redis (< 3.0.0)
+    resque (1.9.10)
+      json_pure (~> 1.4.0)
+      redis-namespace (~> 0.8.0)
+      sinatra (>= 0.9.2)
+      vegas (~> 0.1.2)
     sass (3.1.1)
+    sinatra (1.2.6)
+      rack (~> 1.1)
+      tilt (< 2.0, >= 1.2.2)
     sprockets (2.0.0.beta.2)
       hike (~> 1.0)
       rack (~> 1.0)
@@ -101,6 +113,8 @@ GEM
     uglifier (0.5.1)
       execjs
       json
+    vegas (0.1.8)
+      rack (>= 1.0.0)
 
 PLATFORMS
   ruby
@@ -111,6 +125,7 @@ DEPENDENCIES
   koala
   pg
   rails (= 3.1.0.beta1)
+  resque
   sass
   sqlite3
   therubyracer-heroku (= 0.8.1.pre3)

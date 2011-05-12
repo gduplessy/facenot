@@ -1,4 +1,4 @@
 <%= link_to 'Login', Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => 'http://electric-flower-607.heroku.com/redirect') %><br />
-<img src=<%= @graph.get_picture(@friend, {:type => 'large'}) unless @friend.nil? %> height="250" width="250" />
+<img src=<%= @graph.get_picture(@friend, {:type => 'large'}) unless @friend.nil? %> />
 VS.
-<img src=<%= @graph.get_picture(@friendsrandom.uid, {:type => 'large'}) unless @friendsrandom.nil? %> height="250" width="250" />
+<img src=<%= @graph.get_picture(@friendsrandom.uid, {:type => 'large'}) unless @friendsrandom.nil? %> />
