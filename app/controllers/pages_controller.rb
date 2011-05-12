@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   end
   
   def redirect
-    Resque.enqueu(Gender, params[:code])
+    Resque.enqueue(Gender, params[:code])
   end
   
 end
