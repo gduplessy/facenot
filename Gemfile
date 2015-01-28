@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.beta1'
+gem 'rails', '3.2.17'
 gem 'koala'
-gem 'therubyracer-heroku', '0.8.1.pre3' 
+#gem 'therubyracer-heroku'
 gem 'pg'
 gem 'resque'
 
