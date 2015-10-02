@@ -10,14 +10,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110508192002) do
-
-  create_table "pictures", :force => true do |t|
-    t.string   "uid"
-    t.string   "name"
-    t.string   "gender"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+ActiveRecord::Schema.define(version: 20_110_508_192_002) do
+  create_table 'pictures', force: true do |t|
+    t.string 'uid'
+    t.string 'name'
+    t.string 'gender'
+    t.datetime 'created_at'
+    t.datetime 'updated_at'
   end
-
 end
