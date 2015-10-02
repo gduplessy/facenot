@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.21'
 gem 'koala'
-#gem 'therubyracer-heroku'
+# gem 'therubyracer-heroku'
 gem 'pg'
 gem 'resque'
 
@@ -29,5 +29,5 @@ gem 'jquery-rails'
 
 group :test do
   # Pretty printed test output
-  gem 'turn', :require => false
+  gem 'turn', require: false
 end
