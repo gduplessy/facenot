@@ -4,7 +4,7 @@ gem 'rails', '3.2.21'
 gem 'koala'
 # gem 'therubyracer-heroku'
 gem 'pg'
-gem 'resque'
+gem 'resque', '>= 1.27.4'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
