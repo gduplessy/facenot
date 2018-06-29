@@ -12,7 +12,7 @@ gem 'resque', '>= 1.27.4'
 gem 'sqlite3'
 
 # Asset template engines
-gem 'sass'
+gem 'sass', '>= 3.5.2'
 gem 'coffee-script'
 gem 'uglifier'
 
