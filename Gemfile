@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '4.0.3'
-gem 'koala'
+gem 'koala', '>= 3.0.0'
 # gem 'therubyracer-heroku'
 gem 'pg'
 gem 'resque', '>= 1.27.4'
