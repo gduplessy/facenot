@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '5.2.4.3'
+gem 'rails', '6.0.3.5'
 gem 'koala', '>= 3.0.0'
 # gem 'therubyracer-heroku'
 gem 'pg'
@@ -16,7 +16,7 @@ gem 'sass', '>= 3.5.2'
 gem 'coffee-script'
 gem 'uglifier'
 
-gem 'jquery-rails', '>= 4.4.0'
+gem 'jquery-rails', '>= 4.0.1'
 
 # Use unicorn as the web server
 # gem 'unicorn'
