@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '5.2.4.6'
+gem 'rails', '5.2.6.2'
 gem 'koala', '>= 3.0.0'
 # gem 'therubyracer-heroku'
 gem 'pg'
