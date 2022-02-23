@@ -16,7 +16,7 @@ gem 'sass', '>= 3.5.2'
 gem 'coffee-script'
 gem 'uglifier'
 
-gem 'jquery-rails', '>= 4.0.1'
+gem 'jquery-rails', '>= 4.4.0'
 
 # Use unicorn as the web server
 # gem 'unicorn'
