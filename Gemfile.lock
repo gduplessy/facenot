@@ -54,6 +54,7 @@ GEM
     concurrent-ruby (1.1.10)
     connection_pool (2.3.0)
     crass (1.0.6)
+    date (3.3.1)
     erubi (1.11.0)
     execjs (2.8.1)
     faraday (1.10.0)
@@ -97,8 +98,11 @@ GEM
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.7.1)
+    mail (2.8.0)
       mini_mime (>= 0.1.1)
+      net-imap
+      net-pop
+      net-smtp
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
@@ -109,6 +113,15 @@ GEM
     multipart-post (2.2.3)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
+    net-imap (0.3.2)
+      date
+      net-protocol
+    net-pop (0.1.2)
+      net-protocol
+    net-protocol (0.2.1)
+      timeout
+    net-smtp (0.3.3)
+      net-protocol
     nio4r (2.5.8)
     nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
@@ -183,6 +196,7 @@ GEM
     thor (1.2.1)
     thread_safe (0.3.6)
     tilt (2.0.11)
+    timeout (0.3.1)
     turn (0.9.6)
       ansi
     tzinfo (1.2.10)
@@ -198,7 +212,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-script
-  jquery-rails (>= 4.5.0)
+  jquery-rails (>= 4.5.1)
   koala (>= 3.0.0)
   pg
   rails (= 5.2.8.1)
