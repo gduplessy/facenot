@@ -1,10 +1,10 @@
 source 'http://rubygems.org'
 
-gem 'rails', '6.1.7.1'
+gem 'rails', '6.1.7.3'
 gem 'koala', '>= 3.0.0'
 # gem 'therubyracer-heroku'
 gem 'pg'
-gem 'resque', '>= 2.4.0'
+gem 'resque', '>= 2.5.0'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
