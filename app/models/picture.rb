@@ -3,7 +3,6 @@ class Picture < ActiveRecord::Base
   validates_uniqueness_of :uid
 
   def self.random
-    ids = connection.select_all("SELECT id FROM pictures WHERE gender = 'female'")
-    find(ids[rand(ids.length)]['id'].to_i) unless ids.blank?
+    where(gender: 'female').order('RANDOM()').limit(1).first
   end
 end
