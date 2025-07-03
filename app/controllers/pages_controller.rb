@@ -2,10 +2,8 @@ class PagesController < ApplicationController
   def index
     @graph = Koala::Facebook::GraphAPI.new('194345430580007|ad910226438f313f411b99fe-549563502|yNzMstNxGGnYNAHhyoSRBvCiBGs')
 
-    @user  = Picture.limit(1).where("gender = 'female'").order('random()')
-    @user.each do |id|
-      @friend = id.uid
-    end
+    random_female_user = Picture.where(gender: 'female').order('RANDOM()').limit(1).first
+    @friend = random_female_user&.uid
 
     @friendsrandom = Picture.random
   end
