@@ -8,7 +8,7 @@ gem 'rails', '~> 8.0.2'
 
 # Propshaft is the new default asset pipeline in Rails 8 (replaces Sprockets)
 # It's automatically included with Rails 8, but we can be explicit
-gem 'propshaft'
+gem 'propshaft', '>= 1.2.0'
 
 # Database adapters
 gem 'pg', '~> 1.5'
@@ -21,7 +21,7 @@ gem 'resque', '~> 2.6'
 gem 'koala', '~> 3.5'
 
 # JavaScript and CSS for Rails 8 (Import Maps is default)
-gem 'importmap-rails'
+gem 'importmap-rails', '>= 2.2.0'
 gem 'stimulus-rails'
 gem 'turbo-rails'
 
